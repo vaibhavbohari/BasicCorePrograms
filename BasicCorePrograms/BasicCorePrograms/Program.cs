@@ -1,20 +1,26 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Welcome to Coin Flip!");
+Console.WriteLine("Welcome to LeapYear!");
 
-double head = 0, tail = 0;
-Console.WriteLine("Enter the number of the coin is tossed");
-int repeat = Convert.ToInt32(Console.ReadLine());
-Random random = new Random();
-for (int i = 0; i < repeat; i++)
+int i;
+Console.WriteLine("Enter a year:");
+i = Convert.ToInt32(Console.ReadLine());
+if ((i % 400) == 0)
 {
-
-    double rand = random.NextDouble();
-    Console.WriteLine(rand + " ");
-    if (rand < 0.5) tail++;
-    else head++;
+    Console.WriteLine("Enter year is a Leap yaer:");
 
 }
-double headpercentage = (head / repeat) * 100;
-Console.WriteLine("Percentage of getting head is :" + headpercentage + "\n");  // \n is prints new line.
-Console.WriteLine("Percentage of getting tail is :" + (100 - headpercentage) + "\n");
-Console.ReadLine();
+else if ((i % 100) == 0)
+{
+    Console.WriteLine("Enter year is a Leap yaer:");
+
+}
+else if ((i % 4) == 0)
+
+{
+    Console.WriteLine("Enter year is a Leap yaer:");
+
+}
+else
+{
+    Console.WriteLine("Enter year is a Not Leap yaer:");
+}
