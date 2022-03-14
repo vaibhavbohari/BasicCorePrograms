@@ -1,20 +1,12 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Power of 2");
+Console.WriteLine(" Welcome to Harmonic Number  ");
 
-    int power, result = 1;
-    string N;
-    Console.WriteLine("Enter the power of 2 : ");
-power = Convert.ToInt32 (Console.ReadLine());
-    if (power <31 && power >= 0)
-    {
-        while (power != 0)
-        {
-            result = result * 2;
-            --power;
-        }
-        Console.WriteLine("Answer = " + result);
-    }
-    else
-    {
-        Console.WriteLine("Wrong input will over flow int");
-    }
+Console.WriteLine("Enter the Harmonic you want to find\n");
+int number = Convert.ToInt32(Console.ReadLine());
+double result = 0;
+for (double i = 1; i <= number; i++)
+{
+    result += 1 / i;
+}
+
+Console.WriteLine("The Value of Harmonic " + number + " :" + result + "\n");
