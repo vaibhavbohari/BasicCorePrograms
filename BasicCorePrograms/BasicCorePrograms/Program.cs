@@ -1,12 +1,23 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine(" Welcome to Harmonic Number  ");
+Console.WriteLine(" Welcome to Quotient And Remainder   ");
 
-Console.WriteLine("Enter the Harmonic you want to find\n");
-int number = Convert.ToInt32(Console.ReadLine());
-double result = 0;
-for (double i = 1; i <= number; i++)
+int dividend,
+    divisor;
 {
-    result += 1 / i;
+    Console.Write("Enter dividend:");
+    dividend = Convert.ToInt32(Console.ReadLine());
+}
+{
+    Console.Write("Enter divisor:");
+    divisor = Convert.ToInt32(Console.ReadLine());
 }
 
-Console.WriteLine("The Value of Harmonic " + number + " :" + result + "\n");
+int quotient = dividend / divisor;
+int remainder = dividend % divisor;
+
+
+    Console.WriteLine("Dividend:{0} Divisor:{1}", dividend, divisor);
+    
+        Console.WriteLine("Quotient = " + quotient);
+        
+            Console.WriteLine("Remainder = " +  remainder);
