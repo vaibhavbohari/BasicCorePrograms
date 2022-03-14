@@ -1,23 +1,25 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine(" Welcome to Even Or Odd   ");
+Console.WriteLine(" vowel or Consonant   ");
 
-int i;
-Console.Write("Enter a Number : ");
-i =Convert.ToInt32(Console.ReadLine());
 
-if (i % 2 == 0)
+char ch;
+
 {
-    Console.Write("Entered Number is an Even Number");
-    Console.Read();
+    Console.WriteLine("Enter any character: ");
+    ch = Convert.ToChar(Console.ReadLine());
 }
-else
+if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' || ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U')
+
 {
-    Console.Write("Entered Number is an Odd Number");
-    Console.Read();
+    Console.WriteLine(ch + " is Vowel.");
 }
 
+else if ((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z'))
+{
+    Console.WriteLine(ch + " is Consonant.");
+}
 
 
 
 
-    
+
