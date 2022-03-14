@@ -1,11 +1,10 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Power of 2!");
+Console.WriteLine("Power of 2");
 
     int power, result = 1;
     string N;
     Console.WriteLine("Enter the power of 2 : ");
 power = Convert.ToInt32 (Console.ReadLine());
-  //  power = Convert.ToInt32(N);
     if (power <31 && power >= 0)
     {
         while (power != 0)
