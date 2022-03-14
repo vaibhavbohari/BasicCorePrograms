@@ -22,5 +22,5 @@ else if ((i % 4) == 0)
 }
 else
 {
-    Console.WriteLine("Enter year is a Not Leap yaer:");
+    Console.WriteLine("Enter year is a Not Leap year:");
 }
